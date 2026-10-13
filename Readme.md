@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Руслан Суворов](https://up.htmlacademy.ru/htmlcss-individual/3/user/2717543).
-* Наставник: `Неизвестно`.
+- Студент: [Руслан Суворов](https://up.htmlacademy.ru/htmlcss-individual/3/user/2717543).
+- Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
 
 ---
 
