@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
-- Студент: [Руслан Суворов](https://up.htmlacademy.ru/htmlcss-individual/3/user/2717543).
-- Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
-- Сайт: [Мой проект "Седона"](https://gnullhao.github.io/2717543-sedona-3/).
+- Студент: [Руслан Суворов](https://up.htmlacademy.ru/htmlcss-individual/3/user/2717543)
+- Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789)
+- Сайт: [Мой проект "Седона"](https://gnullhao.github.io/2717543-sedona-3/)
 
 ---
 
