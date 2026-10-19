@@ -9,7 +9,7 @@
   <body>
     <header class="page-header" data-test="header">
       <a class="header-logo" href="index.html">
-        <img class="page-header-logo" src="#" alt="Логотип городка Седона">
+        <img class="page-header-logo" src="#" alt="Логотип города Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -44,16 +44,16 @@
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <nav aria-label="Хлебные крошки">
-          <ul class="breadcrumbs">
+          <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-home-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link-current" aria-current="page">Гостиницы</a>
+              <span class="breadcrumbs-link-current" aria-current="page">Гостиницы</span>
             </li>
-          </ul>
+          </ol>
         </nav>
       </header>
       <section class="hotels-filter" data-test="filter">
@@ -108,19 +108,11 @@
           <fieldset class="hotels-filter-group">
             <legend class="hotels-filter-title">Стоимость, ₽:</legend>
             <!-- Вернутся к этому элементу после изучения 8 темы -->
-            <label>
-              <span class="visually-hidden">Минимальная стоимость</span>
-              <span class="price-input-wrapper min-price-input-wrapper">
-                <input type="number" name="min-price" value="0" min="0" max="9000">
-                <span class="price-input-text" aria-hidden="true">от</span>
-              </span>
+            <label class="hotels-filter-range-control">От
+              <input type="number" name="min-price" value="0" min="0">
             </label>
-            <label>
-              <span class="visually-hidden">Максимальная стоимость</span>
-              <span class="price-input-wrapper max-price-input-wrapper">
-                <input type="number" name="max-price" value="9000" min="1" max="20000">
-                <span class="price-input-text" aria-hidden="true">до</span>
-              </span>
+            <label class="hotels-filter-range-control">До
+              <input type="number" name="max-price" value="9000" min="1">
             </label>
             <div class="price-range">
               <button class="price-range-toggle price-range-toggle-min" type="button">
@@ -143,15 +135,23 @@
           <option value="expensive">Сначала дорогие</option>
           <option value="rating">Высокий рейтинг</option>
         </select>
-        <a href="catalog.html?view=tile" class="button view-button-current">
-          <span class="visually-hidden">Показать плитку</span>
-        </a>
-        <a href="catalog.html?view=card" class="button view-button">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="catalog.html?view=list" class="button view-button">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <ul class="button view-button">
+          <li class="view-button-title">
+            <a href="catalog.html?view=tile" class="button view-button-tile-current">
+              <span class="visually-hidden">Показать плитку</span>
+            </a>
+          </li>
+          <li class="view-button-title">
+            <a href="catalog.html?view=card" class="button view-button-card">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+          </li>
+          <li class="view-button-title">
+            <a href="catalog.html?view=list" class="button view-button-list">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </li>
+        </ul>
         <ul class="hotels-catalog-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
