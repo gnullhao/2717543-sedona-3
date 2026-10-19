@@ -46,7 +46,9 @@
         <nav aria-label="Хлебные крошки">
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Главная</a>
+              <a class="breadcrumbs-link breadcrumbs-home-link" href="index.html">
+                <span class="visually-hidden">Главная</span>
+              </a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link-current" aria-current="page">Гостиницы</a>
@@ -55,7 +57,7 @@
         </nav>
       </header>
       <section class="hotels-filter" data-test="filter">
-        <h2 class="hotels-filter-title">Фильтр гостиниц Седоны</h2>
+        <h2 class="visually-hidden">Фильтр гостиниц Седоны</h2>
         <form class="hotels-filter-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="hotels-filter-group">
             <legend class="hotels-filter-group-title">Инфраструктура:</legend>
@@ -74,7 +76,7 @@
               </li>
               <li class="hotels-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wi-fi">
+                  <input class="control-input" type="checkbox" name="wifi">
                   Wi-Fi
                 </label>
               </li>
@@ -104,17 +106,18 @@
             </ul>
           </fieldset>
           <fieldset class="hotels-filter-group">
-            <legend class="hotels-filter-group-title">Стоимость, ₽:</legend>
-            <!-- Сказали изучим как делать этот декоративный элемент в 8 теме -->
+            <legend class="hotels-filter-title">Стоимость, ₽:</legend>
+            <!-- Вернутся к этому элементу после изучения 8 темы -->
           </fieldset>
           <button class="button hotels-filter-apply-button" type="submit">Применить</button>
           <button class="button hotels-filter-reset-button" type="reset">Сбросить</button>
         </form>
       </section>
       <section class="hotels-catalog" data-test="catalog">
+        <h2 class="hotels-catalog-title">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярные</option>
-          <option value="cheap">Сначала дешевые</option>
+          <option value="cheap" selected>Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="rating">Высокий рейтинг</option>
         </select>
