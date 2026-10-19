@@ -108,6 +108,28 @@
           <fieldset class="hotels-filter-group">
             <legend class="hotels-filter-title">Стоимость, ₽:</legend>
             <!-- Вернутся к этому элементу после изучения 8 темы -->
+            <label>
+              <span class="visually-hidden">Минимальная стоимость</span>
+              <span class="price-input-wrapper min-price-input-wrapper">
+                <input type="number" name="min-price" value="0" min="0" max="9000">
+                <span class="price-input-text" aria-hidden="true">от</span>
+              </span>
+            </label>
+            <label>
+              <span class="visually-hidden">Максимальная стоимость</span>
+              <span class="price-input-wrapper max-price-input-wrapper">
+                <input type="number" name="max-price" value="9000" min="1" max="20000">
+                <span class="price-input-text" aria-hidden="true">до</span>
+              </span>
+            </label>
+            <div class="price-range">
+              <button class="price-range-toggle price-range-toggle-min" type="button">
+                <span class="visually-hidden">Ползунок управления минимальной стоимостью</span>
+              </button>
+              <button class="price-range-toggle price-range-toggle-max" type="button">
+                <span class="visually-hidden">Ползунок управления максимальной стоимостью</span>
+              </button>
+            </div>
           </fieldset>
           <button class="button hotels-filter-apply-button" type="submit">Применить</button>
           <button class="button hotels-filter-reset-button" type="reset">Сбросить</button>
@@ -144,7 +166,7 @@
             <a class="button hotel-card-details-button" href="">Подробнее</a>
             <button class="button hotel-card-favorites-button" type="button">В избранное</button>
             <div class="hotel-card-rating-info">
-              <img class="hotel-card-stars" src="#" alt="4 звезды">
+              <img class="hotel-card-stars hotel-stars-3" src="#" alt="4 звезды">
               <span class="hotel-card-rating-value">Рейтинг: 8,5</span>
             </div>
           </li>
@@ -161,7 +183,7 @@
             <a class="button hotel-card-details-button" href="">Подробнее</a>
             <button class="button hotel-card-favorites-button" type="button">В избранное</button>
             <div class="hotel-card-rating-info">
-              <img class="hotel-card-stars" src="#" alt="4 звезды">
+              <img class="hotel-card-stars hotel-stars-4" src="#" alt="4 звезды">
               <span class="hotel-card-rating-value">Рейтинг: 9,2</span>
             </div>
           </li>
@@ -177,7 +199,7 @@
             <a class="button hotel-card-details-button" href="">Подробнее</a>
             <button class="button hotel-card-favorites-button" type="button">В избранное</button>
             <div class="hotel-card-rating-info">
-              <img class="hotel-card-stars" src="#" alt="3 звезды">
+              <img class="hotel-card-stars hotel-stars-3" src="#" alt="3 звезды">
               <span class="hotel-card-rating-value">Рейтинг: 6,9</span>
             </div>
           </li>
@@ -194,7 +216,7 @@
             <a class="button hotel-card-details-button" href="">Подробнее</a>
             <button class="button hotel-card-favorites-button" type="button">В избранное</button>
             <div class="hotel-card-rating-info">
-              <img class="hotel-card-stars" src="#" alt="2 звезды">
+              <img class="hotel-card-stars hotel-stars-2" src="#" alt="2 звезды">
               <span class="hotel-card-rating-value">Рейтинг: 5,0</span>
             </div>
           </li>
