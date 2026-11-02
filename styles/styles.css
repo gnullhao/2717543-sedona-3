@@ -222,6 +222,11 @@ body {
   color: #000000;
 }
 
+.page-footer-copyright {
+  color: #000000;
+  text-decoration: none;
+}
+
 /* Фильтр каталога гостиниц */
 .catalog-hero {
   background-image: url(../images/backgrounds/catalog-filter.jpg);
