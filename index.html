@@ -8,7 +8,6 @@
   </head>
 
   <body>
-
     <div class="page-container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
@@ -45,7 +44,7 @@
         </nav>
       </header>
 
-      <main class="main-contetn" data-test="main">
+      <main class="main-content" data-test="main">
         <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Городок Седона в Аризоне</h1>
           <img class="hero-image" src="images/content/welcome-text.svg" width="458" height="352"
@@ -53,8 +52,10 @@
         </section>
         <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
-          <p class="advantages-slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="advantages-intro">
+            <p class="advantages-slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-with-image">
               <h3 class="advantages-item-title">Настоящий городок</h3>
@@ -84,8 +85,10 @@
         </section>
         <section class="recommendations">
           <h2 class="visually-hidden">Рекомендации</h2>
-          <p class="recommendations-slogan">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p class="recommendations-description">Опытный персонал и качественное обслуживание!</p>
+          <div class="recommendations-intro">
+            <p class="recommendations-slogan">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="recommendations-description">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="recommendations-list">
             <li class="recommendations-item">
               <h3 class="recommendations-item-title">Жильё</h3>
@@ -130,7 +133,6 @@
               <span class="visually-hidden">Мы во ВКонтакте</span>
             </a>
           </li>
-
           <li class="page-footer-socials-item">
             <a class="page-footer-socials-link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Telegram</span>
