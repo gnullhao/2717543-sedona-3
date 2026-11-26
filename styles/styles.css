@@ -733,7 +733,6 @@ body {
 .hotels-catalog-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
   gap: 20px;
   list-style: none;
 
@@ -748,6 +747,7 @@ body {
   border-radius: 4px;
 
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(2, 140px);
   row-gap: 16px;
   column-gap: 20px;
