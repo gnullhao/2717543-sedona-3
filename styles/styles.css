@@ -733,6 +733,7 @@ body {
 .hotels-catalog-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 20px;
   list-style: none;
 
@@ -845,6 +846,7 @@ body {
 /* Пагинация */
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   list-style: none;
 
@@ -868,9 +870,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
+  min-width: 60px;
   margin: 0;
-  padding: 11.364px 0 12.636px 0;
+  padding: 12px 8px;
   border-radius: 4px;
 }
 
